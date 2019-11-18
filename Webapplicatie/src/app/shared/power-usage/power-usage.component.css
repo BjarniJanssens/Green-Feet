@@ -1,0 +1,43 @@
+.powerUsage{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    align-content: center;
+    font-family: displayBold;
+}
+
+.btnChart{
+    border-color: #f8f8ff;
+    width: 30px;
+    height: 30px;
+    color: #f8f8ff;
+    font-size: 14px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.divBtnChart{
+    width: 100%;
+    align-content: center;
+    position: absolute;
+    bottom: 18%;
+}
+
+.titleBox{
+  width: 100%;
+  color: #f8f8ff;
+  font-family: displayBold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.titleBox i{
+  font-size: 50px;
+}
+
+.titleHouse{
+  margin-top: 3em;
+}
