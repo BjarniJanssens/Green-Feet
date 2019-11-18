@@ -1,9 +1,8 @@
-<div class="card">
-  <canvas baseChart
+<div class="chart">
+  <canvas #myCanvas baseChart height="250px"
           [datasets]="chartData"
           [labels]="chartLabels"
           [options]="chartOptions"
-          [legend]="chartLegend"
           [chartType]="chartType"
           [colors]="chartColors">
   </canvas>
