@@ -1,0 +1,6 @@
+white: #F8F8FF
+fluo: #41F2DE
+blue: #4694FF
+green: #296E66
+grey: #3D3D3D
+black: #000000
