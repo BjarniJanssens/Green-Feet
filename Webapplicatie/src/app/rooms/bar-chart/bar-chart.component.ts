@@ -3,22 +3,21 @@ import { ChartDataSets } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-power-chart',
-  templateUrl: './power-chart.component.html',
-  styleUrls: ['./power-chart.component.css']
+  selector: 'app-bar-chart',
+  templateUrl: './bar-chart.component.html',
+  styleUrls: ['./bar-chart.component.css']
 })
-
-export class PowerChartComponent implements OnInit {
+export class BarChartComponent implements OnInit {
   @ViewChild('myCanvas', {
     static: true
   }) canvas: ElementRef;
   public chartData: ChartDataSets[] = [{
-    data: [4.9, 5.2, 4.7, 5.9, 3.3, 4.3, 4.2, 3.5, 4.6, ],
+    data: [3.6, 6.2, 5.5, 6.9, 5.5, 6.2, 3.6],
     label: ''
   }];
-  public chartLabels: Label[] = ['5AM', '6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12AM'];
+  public chartLabels: Label[] = ['BEDROOM 1', 'KITCHEN', 'BATHROOM', 'BEDROOM 2', 'LIVING ROOM', 'BEDROOM 3', 'STORAGE'];
   public chartOptions = {
-    type: 'line',
+    type: 'bar',
     options: {
       responsive: true,
       title: {
@@ -63,7 +62,7 @@ export class PowerChartComponent implements OnInit {
   };
 
   public chartLegend = true;
-  public chartType = 'line';
+  public chartType = 'bar';
 
   public chartColors: Color[] = [{
   }];
@@ -74,16 +73,13 @@ export class PowerChartComponent implements OnInit {
     const gradient = this.canvas.nativeElement.getContext('2d').createLinearGradient(0, 0, 0, 280);
     gradient.addColorStop(1, 'rgba(70, 148, 255, 1)');
     gradient.addColorStop(.9, 'rgba(70, 148, 255, 1)');
-    gradient.addColorStop(.6, 'rgba(65, 242, 222, .8)');
-    gradient.addColorStop(0, 'rgba(65, 242, 222, .6)');
+    gradient.addColorStop(.6, 'rgba(65, 242, 222, 1)');
+    gradient.addColorStop(0, 'rgba(65, 242, 222, 1)');
     this.chartColors = [{
       borderColor: '#41F2DE',
-      borderWidth: 3,
-      pointHitRadius: 20,
-      pointBackgroundColor: '#41F2DE',
-      pointBorderColor: '#41F2DE',
-      pointBorderWidth: 2,
-      pointHoverBackgroundColor: '#f8f8ff',
+      borderWidth: 0,
+      hoverBorderColor: '#f8f8ff',
+      hoverBorderWidth: 2,
       backgroundColor: gradient
     }];
   }

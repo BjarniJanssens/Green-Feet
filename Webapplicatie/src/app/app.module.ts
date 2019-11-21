@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ChartsModule } from 'ng2-charts';
-
 import { AppRoutingModule } from './app-routing.module';
+import { IgxDatePickerModule } from 'igniteui-angular';
+
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './main/nav-bar/nav-bar.component';
 import { HeaderComponent } from './main/header/header.component';
@@ -19,6 +20,8 @@ import { AccountComponent } from './account/account.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PowerChartComponent } from './shared/power-chart/power-chart.component';
 import { CalendarComponent } from './shared/calendar/calendar.component';
+import { BarChartComponent } from './rooms/bar-chart/bar-chart.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     AccountComponent,
     SettingsComponent,
     PowerChartComponent,
-    CalendarComponent
+    CalendarComponent,
+    BarChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +47,7 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     ChartsModule,
+    IgxDatePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
