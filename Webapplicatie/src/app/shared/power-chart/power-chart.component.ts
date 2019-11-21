@@ -23,14 +23,14 @@ export class PowerChartComponent implements OnInit {
     static: true
   }) canvas: ElementRef;
   public chartData: ChartDataSets[] = [{
-    data: [3.9, 4.2, 3.7, 4.9, 2.3, 3.3, 4.2, 2.5, 3.6, ],
+    data: [4.9, 5.2, 4.7, 5.9, 3.3, 4.3, 4.2, 3.5, 4.6, ],
     label: ''
   }];
   public chartLabels: Label[] = ['5AM', '6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12AM'];
   public chartOptions = {
     type: 'line',
-    responsive: true,
     options: {
+      responsive: true,
       title: {
         display: true,
       },
@@ -51,14 +51,20 @@ export class PowerChartComponent implements OnInit {
         },
         gridLines: {
           display: true,
-          color: '#f8f8ff'
+          color: '#f8f8ff',
+          zeroLineColor : '#3D3D3D',
         },
       }],
       xAxes: [{
         ticks: {
           fontColor: '#f8f8ff',
           fontFamily: 'displayBold',
-        }
+        },
+        gridLines: {
+          display: true,
+          color: '#000000',
+          zeroLineColor : '#000000',
+        },
       }],
     },
     legend: {
@@ -76,16 +82,18 @@ export class PowerChartComponent implements OnInit {
 
   ngOnInit() {
     const gradient = this.canvas.nativeElement.getContext('2d').createLinearGradient(0, 0, 0, 280);
-    gradient.addColorStop(1, '#4694FF');
-    gradient.addColorStop(.9, '#4694FF');
-    gradient.addColorStop(.6, '#41F2DE');
-    gradient.addColorStop(0, '#41F2DE');
+    gradient.addColorStop(1, 'rgba(70, 148, 255, 1)');
+    gradient.addColorStop(.9, 'rgba(70, 148, 255, 1)');
+    gradient.addColorStop(.6, 'rgba(65, 242, 222, .8)');
+    gradient.addColorStop(0, 'rgba(65, 242, 222, .6)');
     this.chartColors = [{
-      borderColor: '#4694FF',
-      borderWidth: 5,
-      pointBackgroundColor: '#f8f8ff',
-      pointBorderColor: '#f8f8ff',
-      pointBorderWidth: 1,
+      borderColor: '#41F2DE',
+      borderWidth: 3,
+      pointHitRadius: 20,
+      pointBackgroundColor: '#41F2DE',
+      pointBorderColor: '#41F2DE',
+      pointBorderWidth: 2,
+      pointHoverBackgroundColor: '#f8f8ff',
       backgroundColor: gradient
     }];
   }

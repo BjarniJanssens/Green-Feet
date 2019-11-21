@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import {ChartsModule} from 'ng2-charts';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,9 +38,11 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    ChartsModule
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
