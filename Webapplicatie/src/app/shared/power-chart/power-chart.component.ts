@@ -42,7 +42,7 @@ export class PowerChartComponent implements OnInit {
         gridLines: {
           display: true,
           color: '#f8f8ff',
-          zeroLineColor : '#3D3D3D',
+          zeroLineColor : '#f8f8ff',
         },
       }],
       xAxes: [{
@@ -52,7 +52,7 @@ export class PowerChartComponent implements OnInit {
         },
         gridLines: {
           display: true,
-          color: '#000000',
+          color: 'transparent',
           zeroLineColor : '#000000',
         },
       }],
@@ -61,6 +61,20 @@ export class PowerChartComponent implements OnInit {
       display: false,
     },
   };
+
+  public backgroundChartPlugins = [{
+    beforeDraw(chart, easing) {
+      const ctx = chart.ctx;
+      const chartArea = chart.chartArea;
+      const top = chartArea.top; // Use a value of 0 here to include the legend
+
+      ctx.save();
+      ctx.fillStyle = '#3d3d3d';
+
+      ctx.fillRect(chartArea.left, top, chartArea.right - chartArea.left, chartArea.bottom - top);
+      ctx.restore();
+    }
+  }];
 
   public chartLegend = true;
   public chartType = 'line';

@@ -15,14 +15,17 @@ export class BarChartComponent implements OnInit {
     data: [3.6, 6.2, 5.5, 6.9, 5.5, 6.2, 3.6],
     label: ''
   }];
+
   public chartLabels: Label[] = ['BEDROOM 1', 'KITCHEN', 'BATHROOM', 'BEDROOM 2', 'LIVING ROOM', 'BEDROOM 3', 'STORAGE'];
   public chartOptions = {
     type: 'bar',
     options: {
       responsive: true,
+      barThickness: 3,
       title: {
         display: true,
       },
+      curvature: 1
     },
     scales: {
       yAxes: [{
@@ -41,7 +44,7 @@ export class BarChartComponent implements OnInit {
         gridLines: {
           display: true,
           color: '#f8f8ff',
-          zeroLineColor : '#3D3D3D',
+          zeroLineColor : '#f8f8ff',
         },
       }],
       xAxes: [{
@@ -51,15 +54,30 @@ export class BarChartComponent implements OnInit {
         },
         gridLines: {
           display: true,
-          color: '#000000',
+          color: 'transparent',
           zeroLineColor : '#000000',
         },
+        barPercentage: 0.6,
       }],
     },
     legend: {
       display: false,
     },
   };
+
+  public backgroundChartPlugins = [{
+    beforeDraw(chart, easing) {
+      const ctx = chart.ctx;
+      const chartArea = chart.chartArea;
+      const top = chartArea.top; // Use a value of 0 here to include the legend
+
+      ctx.save();
+      ctx.fillStyle = '#3d3d3d';
+
+      ctx.fillRect(chartArea.left, top, chartArea.right - chartArea.left, chartArea.bottom - top);
+      ctx.restore();
+    }
+  }];
 
   public chartLegend = true;
   public chartType = 'bar';

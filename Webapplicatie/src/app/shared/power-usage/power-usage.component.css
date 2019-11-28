@@ -1,6 +1,8 @@
 .powerUsage{
     width: 70%;
     margin: auto;
+    margin-top: 5em;
+    margin-bottom: -2em;
     position: relative;
     align-content: center;
     font-family: displayBold;
@@ -23,27 +25,4 @@
     align-content: center;
     position: absolute;
     bottom: 18%;
-}
-
-.titleBox{
-  width: 100%;
-  color: #f8f8ff;
-  font-family: displayBold;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.titleBox i{
-  font-size: 50px;
-}
-
-.titleHouse{
-  margin-top: 3em;
-}
-
-h1{
-  font-size: 3em;
-  line-height: 0;
-  margin-top: 0.5em;
 }

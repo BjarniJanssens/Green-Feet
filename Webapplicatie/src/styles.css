@@ -50,3 +50,28 @@ html { background-color: #000000; }
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.titleBox{
+  width: 100%;
+  color: #f8f8ff;
+  font-family: displayBold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.titleBox i{
+  font-size: 50px;
+}
+
+.titleHouse{
+  margin-top: 3em;
+}
+
+.titleBox h1{
+  font-size: 3em !important;
+  margin-top: 0.5em !important;
+  line-height: 0 !important;
+}
+
