@@ -21,7 +21,7 @@ const routes: Routes = [
   {path: 'account', component: AccountComponent},
   {path: 'settings', component: SettingsComponent},
   {path: 'powerCircle', component: PowerUsageComponent},
-  {path: 'powerChart', component: PowerChartComponent}
+  {path: 'powerChart', component: PowerChartComponent},
 ];
 
 @NgModule({

@@ -101,5 +101,4 @@ export class BarChartComponent implements OnInit {
       backgroundColor: gradient
     }];
   }
-
 }
