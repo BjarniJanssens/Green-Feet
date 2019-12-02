@@ -22,6 +22,8 @@
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
     "@types/hammerjs": "^2.0.36",
+    "@vaadin/vaadin-date-picker": "^4.0.5",
+    "@webcomponents/webcomponentsjs": "^2.4.0",
     "angular-material-datepicker": "^1.0.2",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.9.3",

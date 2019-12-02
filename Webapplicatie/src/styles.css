@@ -1,57 +1,70 @@
-@font-face {
-    font-family: displayBold;
-    src: url(assets/fonts/SF-Compact-Display-Bold.otf) format("opentype");
-  }
+/*-------------------------------------------------------------Fonts------------------------------------------------------------*/
 
 @font-face {
-    font-family: displayRegular;
-    src: url(assets/fonts/SF-Compact-Display-Regular.otf) format("opentype");
-  }
+  font-family: displayBold;
+  src: url(assets/fonts/SF-Compact-Display-Bold.otf) format("opentype");
+}
 
 @font-face {
-    font-family: displayMedium;
-    src: url(assets/fonts/SF-Compact-Display-Medium.otf) format("opentype");
-  }
-
-html { background-color: #000000; }
-
-.navbar{
-    background-color: #3D3D3D !important;
-    padding: 0.6em 0.2em !important;
+  font-family: displayRegular;
+  src: url(assets/fonts/SF-Compact-Display-Regular.otf) format("opentype");
 }
 
-.button-custom{
-    background-color: #1C1C1C !important;
-    border-radius: 15px !important;
-    color: #296E66 !important;
-    font-size: 25px !important;
-    width: 45px !important;
-    height: 45px !important;
-    box-shadow: 0px 0px 10px #000000 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin: auto !important;
+@font-face {
+  font-family: displayMedium;
+  src: url(assets/fonts/SF-Compact-Display-Medium.otf) format("opentype");
 }
 
-.active{
-    color: #41F2DE !important;
-    box-shadow: 0px 0px 10px #41F2DE !important;
+/*-------------------------------------------------------------Main-------------------------------------------------------------*/
+
+html,
+body {
+  height: 100%;
+  background-color: #000000;
 }
 
-.i-custom{
-    text-align: center !important;
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.col-2{
-    flex: 20% !important;
-    max-width: 20% !important;
-    align-content: center !important;
+.navbar {
+  background-color: #3D3D3D !important;
+  padding: 0.6em 0.2em !important;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.titleBox{
+.button-custom {
+  background-color: #1C1C1C !important;
+  border-radius: 15px !important;
+  color: #296E66 !important;
+  font-size: 25px !important;
+  width: 45px !important;
+  height: 45px !important;
+  box-shadow: 0px 0px 10px #000000 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: auto !important;
+}
+
+.active {
+  color: #41F2DE !important;
+  box-shadow: 0px 0px 10px #41F2DE !important;
+}
+
+.i-custom {
+  text-align: center !important;
+}
+
+.col-2 {
+  flex: 20% !important;
+  max-width: 20% !important;
+  align-content: center !important;
+}
+
+/*-------------------------------------------------------------HomeTitle--------------------------------------------------------*/
+
+.titleBox {
   width: 100%;
   color: #f8f8ff;
   font-family: displayBold;
@@ -60,17 +73,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   display: flex;
 }
 
-.titleBox i{
+.titleBox i {
   font-size: 50px;
 }
 
-.titleHouse{
+.titleHouse {
   margin-top: 2em;
 }
 
-.titleBox h1{
+.titleBox h1 {
   font-size: 2.5em !important;
   margin-top: 0.5em !important;
   line-height: 0 !important;
 }
-
