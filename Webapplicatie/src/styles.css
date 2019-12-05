@@ -23,11 +23,6 @@ body {
   background-color: #000000;
 }
 
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
 .navbar {
   background-color: #3D3D3D !important;
   padding: 0.6em 0.2em !important;

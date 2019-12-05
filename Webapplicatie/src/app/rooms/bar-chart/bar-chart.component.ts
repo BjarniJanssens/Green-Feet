@@ -33,7 +33,7 @@ export class BarChartComponent implements OnInit {
           beginAtZero: true,
           fontColor: '#f8f8ff',
           fontFamily: 'displayBold',
-          max: 10
+          max: 12
         },
         scaleLabel: {
           display: true,

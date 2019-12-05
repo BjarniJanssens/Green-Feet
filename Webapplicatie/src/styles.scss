@@ -1,0 +1,182 @@
+// CSS Reset, comment out if not required or using a different module
+// @import '~minireset.css/minireset';
+@import '~igniteui-angular/lib/core/styles/themes/index';
+@include igx-core();
+@include igx-theme($green-palette);
+
+/* autoprefixer grid: on */
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.sample-wrapper {
+    width: inherit;
+    position: relative;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.sample-content {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 0;
+    -webkit-animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -moz-animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.sample-column {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 25%;
+    align-content: flex-start;
+    margin: 16px;
+    min-width: 280px;
+}
+
+.sample-title {
+    color: #41F2DE;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.sample-title .light {
+    font-weight: 400;
+}
+
+.sample-description {
+    font-size: 14px;
+    font-weight: normal;
+    color: #f8f8ff;
+}
+
+.igx-icon, .igx-icon--inactive{
+  color: #f8f8ff;
+  height: 100%;
+  font-size: 4em;
+}
+
+.igx-input-group__label{
+  color: #f8f8ff;
+  font-family: displayBold;
+  font-size: 2em;
+}
+
+.igx-input-group__input{
+  color: #f8f8ff;
+  font-family: displayRegular !important;
+  margin-top: 5em;
+}
+
+.igx-typography .igx-input-group__input{
+  font-size: 2em;
+  margin-top: 0.7em;
+}
+
+.igx-input-group__bundle-main {
+  margin-left: 4.5em;
+  margin-top: 0.8em;
+  position: absolute;
+}
+
+.igx-input-group__bundle{
+  align-items: baseline;
+}
+
+.igx-calendar__body{
+  background-color: #333333;
+}
+.igx-date-picker .igx-calendar{
+  background-color: #333333;
+}
+
+.igx-date-picker .igx-calendar__date{
+  color: #f8f8ff;
+  font-family: displayRegular;
+}
+
+.igx-date-picker .igx-calendar__date--weekend {
+  color: #818181;
+  font-family: displayRegular;
+}
+
+.igx-date-picker .igx-calendar__date--inactive {
+  color: #4E4E4E;
+  font-family: displayRegular;
+}
+
+.igx-date-picker .igx-calendar__label {
+  color: #4E4E4E;
+  font-family: displayRegular;
+}
+
+.igx-calendar__date--selected.igx-calendar__date--current .igx-calendar__date-content {
+  color: black;
+  background: #41F2DE;
+}
+
+.igx-calendar__date--current .igx-calendar__date-content {
+  color: #41F2DE;
+  font-weight: 600;
+  background: transparent;
+}
+
+.igx-calendar__date--selected .igx-calendar__date-content {
+  color: black;
+  background: #41F2DE;
+}
+
+.igx-date-picker .igx-calendar__header {
+  background: linear-gradient(#41F2DE, #4694ff);
+  color: black;
+}
+
+
+.igx-date-picker .igx-calendar-picker__date {
+  color: #CACACA;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+      background: #fdf8f0;
+  }
+  100% {
+      background: #f6e7ec;
+  }
+}
+
+@keyframes color-change-2x {
+    0% {
+        background: #fdf8f0;
+    }
+    100% {
+        background: #f6e7ec;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.headerAlignSyle {
+    text-align: right !important;
+}
