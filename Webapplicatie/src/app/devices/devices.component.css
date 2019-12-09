@@ -1,0 +1,20 @@
+.deviceUsage{
+  width: 70%;
+  margin: auto;
+}
+
+.dropdown{
+  background-color: black;
+  color: white;
+  border: black;
+  font-size: 2em;
+}
+
+.dropdown#xyz {
+  border: none;
+}
+
+
+.titleHouse {
+  margin-top: 0em;
+}

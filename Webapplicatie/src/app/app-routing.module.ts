@@ -8,7 +8,6 @@ import { TrophysComponent } from './trophys/trophys.component';
 import { CompareComponent } from './compare/compare.component';
 import { AccountComponent } from './account/account.component';
 import { SettingsComponent } from './settings/settings.component';
-import { PowerUsageComponent } from './shared/power-usage/power-usage.component';
 import { PowerChartComponent } from './shared/power-chart/power-chart.component';
 
 
@@ -20,7 +19,6 @@ const routes: Routes = [
   {path: 'compare', component: CompareComponent},
   {path: 'account', component: AccountComponent},
   {path: 'settings', component: SettingsComponent},
-  {path: 'powerCircle', component: PowerUsageComponent},
   {path: 'powerChart', component: PowerChartComponent},
 ];
 
