@@ -2,6 +2,9 @@
   margin: auto;
   position: relative;
   align-content: right;
+  margin-top: 0.9em;
+  margin-bottom: 3.3em;
+  width: 95%;
 }
 
 .btnChart{

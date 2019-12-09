@@ -1,5 +1,11 @@
 <div class="sample-wrapper date-picker-wrapper">
     <div>
-        <igx-date-picker id="date-picker" [value]="date" [formatter]="formatter2"></igx-date-picker>
+        <label class="dateDay">{{ dateDay.value | date: 'EEEE' }}</label>
+        <label class="dateDate">{{ dateDay.value | date: 'MMMM d, y' }}</label>
+        <div class="divBtnChart2">
+            <button routerLinkActive="active" class="btn btn-sm btnChart2 click" type="button"><i
+                class="far fa-calendar-alt i-custom"></i></button>
+          </div>
+        <igx-date-picker id="date-picker" #dateDay [value]="date" [formatter]="formatter2"></igx-date-picker>
     </div>
 </div>

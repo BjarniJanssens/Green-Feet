@@ -9,7 +9,7 @@ export class CalendarComponent implements OnInit {
 
   public date: Date = new Date(Date.now());
 
-  private dayFormatter = new Intl.DateTimeFormat('en', { weekday: 'long' });
+  public dayFormatter = new Intl.DateTimeFormat('en', { weekday: 'long' });
   private monthFormatter = new Intl.DateTimeFormat('en', { month: 'long' });
 
   constructor() { }

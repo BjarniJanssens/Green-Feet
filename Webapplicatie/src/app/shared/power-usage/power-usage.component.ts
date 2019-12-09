@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./power-usage.component.css']
 })
 export class PowerUsageComponent implements OnInit {
-  percent = 90;
+  percent = 75;
   radius = 60;
   space = -10;
   outerStrokeGradient = true;
@@ -21,10 +21,10 @@ export class PowerUsageComponent implements OnInit {
   backgroundPadding = -15;
   title = '€6,24';
   titleColor = '#f8f8ff';
-  titleFontSize = 27;
+  titleFontSize = 30;
   subtitle = '16,4kWh';
   subtitleColor = '#f8f8ff';
-  subtitleFontSize = 7;
+  subtitleFontSize = 10;
   showUnits = false;
   animateTitle = false;
   animationDuration = 1000;
