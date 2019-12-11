@@ -8,10 +8,11 @@ import { PowerUsageStatsService } from '../circle-config/power-usage-stats.servi
 })
 export class DevicesComponent implements OnInit {
 
-  percent = 20;
+  maxkWh = 5;
+  kWh = 1.08;
+  percent = this.kWh / this.maxkWh * 100;
   duration = 1000;
   durationPercent = this.duration * this.percent / 100;
-  kWh = 1.08;
   kWhPrice = 0.23;
   consuptionPrice = Math.round(this.kWh * this.kWhPrice * 100) / 100;
 

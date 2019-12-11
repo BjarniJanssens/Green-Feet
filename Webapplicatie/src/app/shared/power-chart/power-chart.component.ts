@@ -13,7 +13,7 @@ export class PowerChartComponent implements OnInit {
     static: true
   }) canvas: ElementRef;
   public chartData: ChartDataSets[] = [{
-    data: [4.9, 5.2, 4.7, 5.9, 3.3, 4.3, 4.2, 3.5, 4.6, ],
+    data: [8.9, 10.2, 8.7, 10.9, 6.3, 8.3, 8.2, 6.5, 8.6, ],
     label: ''
   }];
   public chartLabels: Label[] = ['5AM', '6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12AM'];
@@ -31,7 +31,7 @@ export class PowerChartComponent implements OnInit {
           beginAtZero: true,
           fontColor: '#f8f8ff',
           fontFamily: 'displayBold',
-          max: 10
+          max: 20
         },
         scaleLabel: {
           display: true,
