@@ -1,23 +1,29 @@
-.navbar-header{
-    border-radius: 0px 0px 15px 15px;
-    padding: 0.8em 0.4em;
+/*Logo*/
+.logo {
+  display: flex;
+  margin: auto;
+  height: 100%;
 }
 
-.button-custom{
-    border-radius: 10px;
-    font-size: 20px;
-    width: 35px;
-    height: 35px;
+.logoDiv {
+  align-content: center;
+  margin: 0 0.5em 0 0.5em;
+  width: 50%;
+  padding: 0;
+  height: 100%;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 9em;
+/*Header*/
+.navbar-header {
+  background-color: #3D3D3D;
+  border-radius: 0px 0px 15px 15px;
+  padding: 0.8em;
+  height: 8%;
+  width: 100%;
 }
 
-.col-ms-5{
-    align-content: center;
-    margin: 0 0.5em 0 0.5em;
+/*Buttons*/
+.button-custom {
+  max-height: 5em;
+  max-width: 7em;
 }

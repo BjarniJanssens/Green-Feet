@@ -1,20 +1,17 @@
+/*Device Usage Circle*/
 .deviceUsage{
   width: 70%;
   margin: auto;
 }
 
-.dropdown{
-  background-color: black;
-  color: white;
-  border: black;
-  font-size: 2em;
+/*Dorpdown*/
+.dropdownMenu {
+  font-family: displayMedium;
 }
 
-.dropdown#xyz {
-  border: none;
-}
-
-
-.titleHouse {
-  margin-top: 0em;
+.dropdownButton{
+  width: 60%;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  background-color: linear-gradient(#41F2DE, #4694ff);
 }

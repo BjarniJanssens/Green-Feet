@@ -6,22 +6,7 @@
   margin-bottom: 3.3em;
   width: 95%;
 }
-
-.btnChart{
-  border-color: #f8f8ff;
-  background-color: #000000;
-  width: 30px;
-  height: 30px;
-  color: #f8f8ff;
-  font-size: 14px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
 .divBtnChart{
-  position: absolute;
   top: 18px;
   right: 30px;
 }

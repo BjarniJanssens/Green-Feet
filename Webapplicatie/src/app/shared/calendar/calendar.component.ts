@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-calendar',
-  styleUrls: ['./calendar.component.scss'],
+  styleUrls: ['./calendar.component.css'],
   templateUrl: './calendar.component.html',
 })
 export class CalendarComponent implements OnInit {
@@ -14,12 +14,7 @@ export class CalendarComponent implements OnInit {
 
   constructor() { }
 
-  public formatter = (date: Date) => {
-    // tslint:disable-next-line:max-line-length
-    return `${this.dayFormatter.format(date)}`;
-  }
   public formatter2 = (date: Date) => {
-    // tslint:disable-next-line:max-line-length
     return `${this.monthFormatter.format(date)} ${date.getDate()}, ${date.getFullYear()}`;
   }
 

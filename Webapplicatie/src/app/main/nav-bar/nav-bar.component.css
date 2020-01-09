@@ -1,3 +1,16 @@
+/*Navbar*/
+.navbar {
+  background-color: #3D3D3D;
+  padding: 0.6em 0.2em  ;
+  height: 100%;
+}
+
 .navbar-footer {
   border-radius: 15px 15px 0px 0px;
+  height: 10%;
+  width: 100%;
+}
+
+.navbarHeight{
+  height: 100%;
 }

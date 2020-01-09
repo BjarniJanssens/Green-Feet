@@ -1,20 +1,20 @@
   <nav class="navbar fixed-bottom navbar-expand-lg justify-content-center navbar-footer">
     <div class="navbar w-100" id="navbarNav">
-      <form class="form-inline av-fill w-100">
-        <div class="col-2">
-          <button routerLink="home" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-home i-custom"></i></button>
+      <form class="form-inline av-fill w-100 navbarHeight">
+        <div class="col-2 buttonCol">
+          <button routerLink="home" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-home i-custom navIcon"></i><a [routerLink]="['powerChart']" style="display: none"></a></button>
         </div>
-        <div class="col-2">
-          <button routerLink="rooms" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-bed i-custom"></i></button>
+        <div class="col-2 buttonCol">
+          <button routerLink="rooms" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-bed i-custom navIcon"></i></button>
         </div>
-        <div class="col-2">
-          <button routerLink="devices" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-desktop i-custom"></i></button>
+        <div class="col-2 buttonCol">
+          <button routerLink="devices" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-desktop i-custom navIcon"></i></button>
         </div>
-        <div class="col-2">
-          <button routerLink="trophys" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-trophy i-custom"></i></button>
+        <div class="col-2 buttonCol">
+          <button routerLink="trophys" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-trophy i-custom navIcon"></i></button>
         </div>
-        <div class="col-2">
-          <button routerLink="compare" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-desktop i-custom"></i></button>
+        <div class="col-2 buttonCol">
+          <button routerLink="compare" routerLinkActive="active" class="btn btn-sm button-custom" type="button"><i class="fas fa-desktop i-custom navIcon"></i></button>
         </div>
       </form>
     </div>

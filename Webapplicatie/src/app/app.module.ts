@@ -4,9 +4,9 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ChartsModule } from 'ng2-charts';
-import { AppRoutingModule } from './app-routing.module';
 import { IgxDatePickerModule } from 'igniteui-angular';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './main/nav-bar/nav-bar.component';
 import { HeaderComponent } from './main/header/header.component';

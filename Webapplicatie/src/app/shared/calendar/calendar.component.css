@@ -1,0 +1,41 @@
+.date-picker-wrapper {
+  padding: 2em 2em 0 2em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: 20%;
+}
+
+.dateDay{
+  font-family: displayBold;
+  font-size: 3em;
+  color: #f8f8f8;
+}
+
+.dateDate{
+  font-family: displayRegular;
+  font-size: 2em;
+  color: #f8f8f8;
+}
+
+.headerAlignSyle {
+  text-align: right !important;
+}
+
+.btnChart2{
+border-color: #f8f8ff;
+background-color: #000000;
+width: 30px;
+height: 30px;
+color: #f8f8ff;
+font-size: 14px;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+.divBtnChart2{
+position: absolute;
+top: 50px;
+right: 30px;
+}

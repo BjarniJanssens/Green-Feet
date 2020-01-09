@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
   percent = this.kWh / this.MaxkWh * 100;
   duration = 1000;
   durationPercent = this.duration * this.percent / 100;
-
   kWhPrice = 0.23;
   consuptionPrice = Math.round(this.kWh * this.kWhPrice * 100) / 100;
 
