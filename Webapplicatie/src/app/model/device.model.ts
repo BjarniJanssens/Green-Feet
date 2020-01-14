@@ -1,4 +1,4 @@
-export class Device{
+export class Device {
   name: string;
   kwh: number;
   consumptionPrice: number;
@@ -13,7 +13,7 @@ export class Device{
 
   calculateConsumptionPrice() {
    return Math.round(this.kwh * 0.23 * 100) / 100;
-  }
+  }s
 
   calculatePercentage() {
       return 100 - (this.kwh / 0.30 * 100);

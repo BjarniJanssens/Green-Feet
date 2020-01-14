@@ -6,7 +6,7 @@ import { Device } from 'src/app/model/device.model';
 })
 export class DeviceUsageStatsService {
 
-  devicesObjects = [
+  devicesObjects: Device[] = [
     new Device('Television', 0.20),
     new Device('Lights', 0.20),
     new Device('Console', 0.11),
@@ -17,9 +17,5 @@ export class DeviceUsageStatsService {
   ];
 
   constructor() {}
-
-  getAllDevices() {
-    return this.devicesObjects;
-  }
 
 }

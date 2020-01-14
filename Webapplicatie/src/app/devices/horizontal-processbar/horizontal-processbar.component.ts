@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { DeviceUsageStatsService} from 'src/app/config/device-usage-stats.service';
+import {Component, Input} from '@angular/core';
+import {Device} from '../../model/device.model';
 
 @Component({
 selector: 'app-horizontal-processbar',
@@ -11,7 +11,6 @@ export class HorizontalProcessbarComponent {
   dottes = 8;
   dottesWidth = 100 / this.dottes;
 
-  device;
+  @Input() device: Device;
 
-  constructor(private deviceUsageStats: DeviceUsageStatsService) { }
 }

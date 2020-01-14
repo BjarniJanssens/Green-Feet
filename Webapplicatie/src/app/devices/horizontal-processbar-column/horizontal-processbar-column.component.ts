@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DeviceUsageStatsService} from 'src/app/config/device-usage-stats.service';
+import {Device} from '../../model/device.model';
 
 @Component({
   selector: 'app-horizontal-processbar-column',
@@ -8,14 +9,12 @@ import { DeviceUsageStatsService} from 'src/app/config/device-usage-stats.servic
 })
 export class HorizontalProcessbarColumnComponent implements OnInit {
 
-  devices: any[];
+  devices: Device[];
 
   constructor(private deviceUsageStats: DeviceUsageStatsService) { }
 
   ngOnInit() {
-    // console.log('executing get all')
-    // this.deviceUsageStats.getAllDevices();
-    // console.log(this.devices.length);
+    this.devices = this.deviceUsageStats.devicesObjects;
   }
 
 }
