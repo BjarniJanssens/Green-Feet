@@ -1,6 +1,7 @@
 .powerUsage{
   height: 100%;
   margin: auto;
+  margin-top: 1.5em;
 }
 
 .divBtnChart{
@@ -8,3 +9,80 @@
   align-content: center;
   bottom: 18%;
 }
+
+@media screen and (max-width: 365px) {
+  .titleHouseBox {
+    margin-top: 1.3em;
+  }
+}
+
+@media screen and (min-width: 365px) and (max-width: 450px) {
+  .titleHouseBox {
+    margin-top: 8vw;
+  }
+
+  .titleBox i {
+    font-size: 13vw;
+  }
+
+  .titleBox h1 {
+    font-size: 12vw;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .titleHouseBox {
+    margin-top: 4vw;
+  }
+
+  .titleBox i {
+    font-size: 8vw;
+  }
+
+  .titleBox h1 {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .titleHouseBox {
+    margin-top: 7vw;
+  }
+
+  .titleBox i {
+    font-size: 8vw;
+  }
+
+  .titleBox h1 {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .titleHouseBox {
+    margin-top: 5em;
+  }
+
+  .titleBox i {
+    font-size: 7vw;
+  }
+
+  .titleBox h1 {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .titleHouseBox {
+    margin-top: 1.5em;
+  }
+
+  .titleBox i {
+    font-size: 3vw;
+  }
+
+  .titleBox h1 {
+    font-size: 3vw;
+  }
+}
+

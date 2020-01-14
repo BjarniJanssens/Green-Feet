@@ -1,0 +1,13 @@
+<div class="processBarBoxs">
+  <div class="processBar">
+    <p class="device">{{device.name}}</p>
+    <div class="processGradient">
+        <div class="dottedBox">
+          <div class="processPercent" [ngStyle]="{'width': device.percentage +'%'}"></div>
+          <img src="/assets/img/Processbar.png" [ngStyle]="{'width': dottesWidth +'%'}" class="processImg" alt="" *ngFor="let i of [].constructor(dottes)">
+        </div>
+    </div>
+    <p class="deviceValue">€{{device.consumptionPrice}}</p>
+    <p class="deviceKwh">/{{device.kwh}} kWh</p>
+  </div>
+</div>

@@ -1,18 +1,13 @@
 <div class="centerBox">
-<div class="chart">
-  <canvas #myCanvas baseChart height="250px"
-          [datasets]="chartData"
-          [labels]="chartLabels"
-          [options]="chartOptions"
-          [chartType]="chartType"
-          [colors]="chartColors"
-          [plugins]="backgroundChartPlugins">
-  </canvas>
-  <div class="divBtnChart">
-    <button routerLink="../home" routerLinkActive="active" class="btn btn-sm btnChart click" type="button"><i
-        class="far fa-chart-bar i-custom"></i></button>
+  <div class="chart">
+    <canvas #myCanvas baseChart height="250px" [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions"
+      [chartType]="chartType" [colors]="chartColors" [plugins]="backgroundChartPlugins">
+    </canvas>
+    <div class="divBtnChart">
+      <button routerLink="../home" routerLinkActive="active" class="btn btn-sm btnChart click" type="button"><i
+          class="far fa-chart-bar i-custom"></i></button>
+    </div>
   </div>
-</div>
 </div>
 <div class="titleHouseBox">
   <div class="titleHouse">
@@ -24,5 +19,3 @@
     </div>
   </div>
 </div>
-
-

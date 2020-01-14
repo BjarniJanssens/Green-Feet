@@ -21,6 +21,9 @@ import { SettingsComponent } from './settings/settings.component';
 import { PowerChartComponent } from './shared/power-chart/power-chart.component';
 import { CalendarComponent } from './shared/calendar/calendar.component';
 import { BarChartComponent } from './rooms/bar-chart/bar-chart.component';
+import { HorizontalProcessbarComponent } from './devices/horizontal-processbar/horizontal-processbar.component';
+import { HorizontalProcessbarColumnComponent } from './devices/horizontal-processbar-column/horizontal-processbar-column.component';
+
 
 
 @NgModule({
@@ -39,6 +42,8 @@ import { BarChartComponent } from './rooms/bar-chart/bar-chart.component';
     PowerChartComponent,
     CalendarComponent,
     BarChartComponent,
+    HorizontalProcessbarComponent,
+    HorizontalProcessbarColumnComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,7 @@ import { BarChartComponent } from './rooms/bar-chart/bar-chart.component';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     ChartsModule,
-    IgxDatePickerModule
+    IgxDatePickerModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

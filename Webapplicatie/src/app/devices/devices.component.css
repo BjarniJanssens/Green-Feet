@@ -1,17 +1,43 @@
 /*Device Usage Circle*/
-.deviceUsage{
-  width: 70%;
+.deviceUsage {
+  width: 60%;
   margin: auto;
+  margin-top: 1em;
 }
 
 /*Dorpdown*/
-.dropdownMenu {
-  font-family: displayMedium;
+
+.dropdown {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  font-family: displayBold;
 }
 
-.dropdownButton{
+.dropdown-menu {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  font-size: 2em;
+}
+
+.dropdown-item{
+  color: white;
+}
+
+.dropdownButton {
   width: 60%;
   margin-top: 0.5em;
   font-size: 1.5em;
   background-color: linear-gradient(#41F2DE, #4694ff);
 }
+
+#dropdownMenuButton {
+  font-size: 2em;
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+

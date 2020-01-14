@@ -1,0 +1,132 @@
+@media screen and (max-width: 365px) {
+  .centerBox {
+    width: 85%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .btnChart{
+    font-size: 0.6em;
+  }
+
+  .divBtnChart{
+    top: 1em;
+    right: 1em;
+  }
+
+  .titleBox i {
+    font-size: 11vw;
+  }
+
+  .titleBox h1 {
+    font-size: 8vw;
+  }
+
+  .titleHouseBox {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 365px) and (max-width: 450px) {
+  .centerBox {
+    width: 85%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .btnChart{
+    font-size: 0.6em;
+  }
+
+  .divBtnChart{
+    top: 1em;
+    right: 2em;
+  }
+
+  .titleBox i {
+    font-size: 13vw;
+  }
+
+  .titleBox h1 {
+    font-size: 12vw;
+  }
+
+  .titleHouseBox {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .titleHouseBox {
+    margin-top: 4vw;
+  }
+
+  .titleBox i {
+    font-size: 8vw;
+  }
+
+  .titleBox h1 {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /* .titleHouseBox {
+    margin-top: 7vw;
+  }
+
+  .titleBox i {
+    font-size: 8vw;
+  }
+
+  .titleBox h1 {
+    font-size: 8vw;
+  }
+  .centerBox {
+    height: 41%;
+} */
+}
+
+@media screen and (min-width: 1000px) {
+  .centerBox {
+    width: 68%;
+    height: 37%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .titleHouseBox {
+    margin-top: 5em;
+  }
+
+  .titleBox i {
+    font-size: 7vw;
+  }
+
+  .titleBox h1 {
+    font-size: 8vw;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .centerBox {
+    width: 25%;
+    height: 36%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .titleHouseBox {
+    margin-top: 1.5em;
+  }
+
+  .titleBox i {
+    font-size: 3vw;
+  }
+
+  .titleBox h1 {
+    font-size: 3vw;
+  }
+}

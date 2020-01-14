@@ -1,0 +1,57 @@
+.processBarBox {
+  width: 100%;
+  height: auto;
+}
+
+.processBar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.processGradient {
+  width: 57%;
+  height: 100%;
+  margin: 1em;
+  position: relative;
+  background-image: linear-gradient(to right, #3CEFA3, #F6FC5A, #FF4848);
+}
+
+.processImg {
+  height: auto;
+  position: relative;
+  margin: -1px 0px;
+}
+
+.processPercent {
+  height: 100%;
+
+  right: 0;
+  top: 0;
+  background-color: #181818;
+  position: absolute;
+}
+
+.device {
+  width: 18%;
+  color: white;
+  font-size: 15px;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.deviceValue {
+  width: 17%;
+  color: white;
+  margin-top: 1em;
+}
+
+.deviceKwh {
+  width: 20%;
+  margin-top: 1.8em;
+  color: white;
+  font-size: 10px;
+
+}
+
+

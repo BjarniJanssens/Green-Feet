@@ -2,8 +2,11 @@
   <div class="titleBox">
     <i class="fas fa-bed"></i>
   </div>
-  <div class="dropdown titleBox">
-    <div class="dropdown-menu dropdown-primary dropdownMenu">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Bedroom 1
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="devices">Bedroom 1</a>
       <a class="dropdown-item" href="devices">Bedroom 2</a>
       <a class="dropdown-item" href="devices">Kitchen</a>
@@ -16,4 +19,5 @@
   <div class="deviceUsage">
     <app-power-usage></app-power-usage>
   </div>
+  <app-horizontal-processbar-column></app-horizontal-processbar-column>
 </div>

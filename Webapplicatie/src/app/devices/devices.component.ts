@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PowerUsageStatsService } from '../circle-config/power-usage-stats.service';
+import { PowerUsageStatsService } from '../config/power-usage-stats.service';
 
 @Component({
   selector: 'app-devices',

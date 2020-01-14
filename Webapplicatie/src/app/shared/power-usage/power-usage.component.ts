@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import 'src/app/home/home.component';
-import { PowerUsageStatsService } from 'src/app/circle-config/power-usage-stats.service';
+import { PowerUsageStatsService } from 'src/app/config/power-usage-stats.service';
 
 @Component({
   selector: 'app-power-usage',
